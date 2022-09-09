@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "5ff008b8-3b43-48ce-ac34-e7a6f41b3886",
+		"name": "TareaAPI_Arquitectura2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PeliculasCategoriaGet/Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Id\":1,\r\n     \"Title_Pelicula\":\"Thor Racknarok\",\r\n     \"Clasificacion\":\"A\",\r\n     \"Genero\":\"Accion\",\r\n     \"Idioma\":\"Español\",\r\n     \"Autor\":\"Taika Waititi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44302/api/Categorias",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44302",
+					"path": [
+						"api",
+						"Categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeliculasPopularesGet/Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"1\",\r\n    \"NombrePelicula\":\"Mi Villano Favorito\",\r\n    \"Rancking\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/UserController1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"UserController1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
